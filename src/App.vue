@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
+   <main class="w-100%" font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
+    <RouterView />
+  </main>
+  <!-- <div>
     <a href="https://www.electronjs.org/" target="_blank">
       <img src="./assets/electron.svg" class="logo electron" alt="Electron logo" />
     </a>
@@ -18,7 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <div class="flex-center">
     Place static files into the <code>/public</code> folder
     <img style="width: 2.4em; margin-left: .4em;" src="/logo.svg" alt="Logo">
-  </div>
+  </div> -->
 </template>
 
 <style>

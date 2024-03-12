@@ -4,16 +4,28 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "strict": true,
+    "baseUrl": ".",
     "jsx": "preserve",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
+    "noEmit": true,
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "noEmit": true
+    "types": [
+      "vite/client",
+      "unplugin-vue-router/client",
+      "element-plus/global"
+    ],
+    "paths": {
+      "~/*": ["src/*"]
+    },
   },
-  "include": ["src"],
   "references": [
     { "path": "./tsconfig.node.json" }
   ]
