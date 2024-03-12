@@ -34,6 +34,7 @@ export default defineConfig(({ command }) => {
         },
       }),
       VueRouter(),
+      UnoCSS(),
           // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: [
@@ -61,7 +62,6 @@ export default defineConfig(({ command }) => {
 
     // https://github.com/antfu/unocss
     // see uno.config.ts for config
-    UnoCSS(),
     electron({
       main: {
         // Shortcut of `build.lib.entry`

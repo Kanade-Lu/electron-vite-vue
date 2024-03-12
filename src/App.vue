@@ -1,8 +1,22 @@
 <script setup lang="ts">
+const router = useRouter()
+const go = () => {
+  router.push('/hi/test')
+}
+const gotest = () => {
+  router.push('/home/:all(.*)')
+}
+
+onMounted(() => {
+  router.push('/home/:all(.*)')
+})
+
 </script>
 
 <template>
    <main class="w-100%" font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
+    <el-button @click="go">测试</el-button>
+    <el-button @click="gotest">测试</el-button>
     <RouterView />
   </main>
   <!-- <div>
